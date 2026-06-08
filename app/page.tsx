@@ -170,12 +170,8 @@ export default function HomePage() {
           </div>
 
           {/* Right — hero image */}
-          <div className="flex justify-center">
-            <img
-              src="/octoblocks.svg"
-              alt="DayOff Studio illustration"
-              className="w-full max-w-[380px] h-auto object-contain"
-            />
+          <div className="w-[65%] mx-auto flex justify-center">
+            <img src="/octopus-removebg.png" alt="DayOff Studio illustration" className="w-full h-auto" />
           </div>
 
         </div>
@@ -352,17 +348,11 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* Col 3 — social */}
+          {/* Col 3 — services */}
           <div className="flex flex-col gap-3 items-center md:items-start">
-            <span className="font-jakarta text-[10px] tracking-[0.15em] font-bold text-do-black uppercase mb-1">Follow</span>
-            {["Instagram", "Twitter / X", "LinkedIn"].map((s) => (
-              <a
-                key={s}
-                href="#"
-                className="font-sans text-sm text-do-gray hover:text-do-black transition-colors duration-150 w-fit"
-              >
-                {s}
-              </a>
+            <span className="font-jakarta text-[10px] tracking-[0.15em] font-bold text-do-black uppercase mb-1">Services</span>
+            {["Custom Agents", "Automations", "Internal Tools", "AI Products"].map((s) => (
+              <span key={s} className="font-sans text-sm text-do-gray">{s}</span>
             ))}
           </div>
 

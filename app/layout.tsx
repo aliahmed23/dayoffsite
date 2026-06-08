@@ -24,9 +24,33 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "DayOff Studio — Brands & Digital Experiences",
+  title: "DayOff Studio — We Automate the Boring Stuff",
   description:
-    "DayOff Studio is a creative studio for founders, teams, and ideas that need a sharper shape.",
+    "DayOff Studio builds custom agents, automations, and internal tools so you can stop doing repetitive work and get back to building your business.",
+  metadataBase: new URL("https://dayoff.studio"),
+  openGraph: {
+    title: "DayOff Studio — We Automate the Boring Stuff",
+    description:
+      "DayOff Studio builds custom agents, automations, and internal tools so you can stop doing repetitive work and get back to building your business.",
+    url: "https://dayoff.studio",
+    siteName: "DayOff Studio",
+    images: [
+      {
+        url: "/DOmetadata.png",
+        width: 1200,
+        height: 630,
+        alt: "DayOff Studio",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DayOff Studio — We Automate the Boring Stuff",
+    description:
+      "DayOff Studio builds custom agents, automations, and internal tools so you can stop doing repetitive work and get back to building your business.",
+    images: ["/DOmetadata.png"],
+  },
 };
 
 export default function RootLayout({

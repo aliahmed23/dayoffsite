@@ -114,22 +114,25 @@ export default function AboutPage() {
 
       {/* ── Footer ── */}
       <footer className="w-full px-6 md:px-12 py-10 border-t border-[#e4e3df]">
-        <div className="max-w-container mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-[11px] text-center sm:text-left">
+        <div className="max-w-container mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-center sm:text-left">
 
-          <div className="flex flex-col gap-1.5 items-center sm:items-start">
-            <span className="font-sans text-do-black">© {new Date().getFullYear()} DayOff Studio</span>
-            <span className="font-sans text-do-gray">All rights reserved</span>
+          <div className="flex flex-col gap-2 items-center sm:items-start">
+            <span className="font-jakarta text-[10px] tracking-[0.15em] font-bold text-do-black uppercase">DayOff Studio</span>
+            <span className="font-sans text-xs text-do-gray leading-relaxed max-w-[180px]">We automate the boring stuff so you can keep building your business.</span>
+            <span className="font-sans text-[11px] text-do-gray mt-1">© {new Date().getFullYear()} All rights reserved</span>
           </div>
 
-          <div className="flex flex-col gap-1.5 items-center sm:items-start">
-            {["Instagram", "Twitter", "LinkedIn"].map((s) => (
-              <a key={s} href="#" className="font-sans text-do-gray hover:text-do-black transition-colors duration-150 w-fit">{s}</a>
+          <div className="flex flex-col gap-2 items-center sm:items-start">
+            <span className="font-jakarta text-[10px] tracking-[0.15em] font-bold text-do-black uppercase">Navigate</span>
+            {[["Studio", "/"], ["Work", "/work"], ["About", "/about"], ["Contact", "/contact"]].map(([label, href]) => (
+              <a key={label} href={href} className="font-sans text-xs text-do-gray hover:text-do-black transition-colors duration-150 lowercase">{label}</a>
             ))}
           </div>
 
-          <div className="flex flex-col gap-1.5 items-center sm:items-start">
-            <span className="font-sans text-do-black">Let&apos;s create something great together</span>
-            <a href="mailto:hello@dayoff.studio" className="font-sans text-do-gray hover:text-do-blue transition-colors duration-150">hello@dayoff.studio</a>
+          <div className="flex flex-col gap-2 items-center sm:items-start">
+            <span className="font-jakarta text-[10px] tracking-[0.15em] font-bold text-do-black uppercase">Get in touch</span>
+            <p className="font-sans text-xs text-do-gray leading-relaxed max-w-[180px]">Let&apos;s build something great together.</p>
+            <a href="mailto:hello@dayoff.studio" className="font-sans text-xs text-do-blue hover:text-do-black transition-colors duration-150">hello@dayoff.studio</a>
           </div>
 
         </div>
