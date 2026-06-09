@@ -88,11 +88,11 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-[#FBFBFB] text-do-black">
       <header className="w-full px-6 md:px-12 py-5 relative z-50">
-        <div className="max-w-container mx-auto grid grid-cols-3 items-center">
+        <div className="max-w-container mx-auto flex items-center justify-between md:grid md:grid-cols-3 md:items-center">
 
-          <a href="/" className="inline-flex flex-col items-center justify-self-start" aria-label="DayOff Studio home">
-            <img src="/do-logo-clean.svg" alt="DayOff Studio" className="h-[100px] w-auto" />
-            <span className="font-jakarta text-xs font-bold text-do-black tracking-[0.1em] mt-1">
+          <a href="/" className="inline-flex items-center gap-2 md:flex-col md:gap-0 md:justify-self-start" aria-label="DayOff Studio home">
+            <img src="/DOLogoNew.svg" alt="DayOff Studio" className="h-10 md:h-[100px] w-auto" />
+            <span className="font-jakarta text-xs font-bold text-do-black tracking-[0.1em] md:mt-1">
               DayOff Studio
             </span>
           </a>
@@ -106,7 +106,7 @@ export default function HomePage() {
 
           <div className="justify-self-end flex items-center">
             <ArrowLink
-              href="/contact"
+              href="https://tally.so/r/9q4jg4"
               className="hidden md:inline-flex text-sm text-do-blue font-medium hover:text-do-black lowercase"
             >
               contact us
@@ -131,31 +131,29 @@ export default function HomePage() {
 
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-[#FBFBFB] border-t border-[#e4e3df] px-6 py-8 flex flex-col gap-6 z-50 shadow-sm">
+          <div className="md:hidden absolute top-full right-6 bg-[#FBFBFB] border border-[#e4e3df] rounded-lg px-5 py-4 flex flex-col gap-4 z-50 shadow-sm">
             {mobileLinks.map((l) => (
               <a
                 key={l}
                 href={l === "Studio" ? "/" : `/${l.toLowerCase()}`}
                 onClick={() => setMenuOpen(false)}
-                className="font-sans text-2xl lowercase text-do-black hover:text-do-blue transition-colors duration-150"
+                className="font-sans text-base lowercase text-do-black hover:text-do-blue transition-colors duration-150"
               >
                 {l}
               </a>
             ))}
-            <div className="border-t border-[#e4e3df] pt-6">
-              <a
-                href="/contact"
-                onClick={() => setMenuOpen(false)}
-                className="font-sans text-sm text-do-blue font-medium lowercase hover:text-do-black transition-colors duration-150"
-              >
-                contact us ↗
-              </a>
-            </div>
+            <a
+              href="https://tally.so/r/9q4jg4"
+              onClick={() => setMenuOpen(false)}
+              className="font-sans text-base lowercase text-do-black hover:text-do-blue transition-colors duration-150"
+            >
+              contact us
+            </a>
           </div>
         )}
       </header>
 
-      <section className="w-full px-6 md:px-12 pt-16 pb-8">
+      <section className="w-full px-6 md:px-12 pt-10 md:pt-4 pb-0">
         <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
           {/* Left — copy */}
@@ -171,14 +169,14 @@ export default function HomePage() {
 
           {/* Right — hero image */}
           <div className="w-[65%] mx-auto flex justify-center">
-            <img src="/octopus-removebg.png" alt="DayOff Studio illustration" className="w-full h-auto" />
+            <img src="/octtake3.png" alt="DayOff Studio illustration" className="w-full h-auto" />
           </div>
 
         </div>
       </section>
 
       {/* ── Selected Work ── */}
-      <section className="w-full px-6 md:px-12 pt-20 pb-10">
+      <section className="w-full px-6 md:px-12 pt-8 pb-10">
         <div className="max-w-container mx-auto">
 
           {/* Label + heading */}
@@ -319,23 +317,20 @@ export default function HomePage() {
 
       {/* ── Footer ── */}
       <footer className="w-full px-6 md:px-12 py-12 border-t border-[#e4e3df]">
-        <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 text-center md:text-left">
+        <div className="max-w-container mx-auto grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-8 text-left">
 
           {/* Col 1 — brand */}
-          <div className="flex flex-col gap-4 items-center md:items-start">
+          <div className="flex flex-col gap-4 items-start">
             <a href="/" aria-label="DayOff Studio home">
-              <img src="/do-logo-clean.svg" alt="DayOff Studio" className="h-12 w-auto" />
+              <img src="/DOLogoNew.svg" alt="DayOff Studio" className="h-12 w-auto" />
             </a>
             <p className="font-sans text-xs leading-relaxed text-do-gray max-w-[200px]">
               We automate the boring stuff so you can keep building your business.
             </p>
-            <a href="mailto:hello@dayoff.studio" className="font-sans text-xs text-do-gray hover:text-do-blue transition-colors duration-150">
-              hello@dayoff.studio
-            </a>
           </div>
 
           {/* Col 2 — nav */}
-          <div className="flex flex-col gap-3 items-center md:items-start">
+          <div className="flex flex-col gap-3 items-start">
             <span className="font-jakarta text-[10px] tracking-[0.15em] font-bold text-do-black uppercase mb-1">Navigate</span>
             {navLinks.map((l) => (
               <a
@@ -348,8 +343,8 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* Col 3 — services */}
-          <div className="flex flex-col gap-3 items-center md:items-start">
+          {/* Col 3 — services (desktop only) */}
+          <div className="hidden md:flex flex-col gap-3 items-start">
             <span className="font-jakarta text-[10px] tracking-[0.15em] font-bold text-do-black uppercase mb-1">Services</span>
             {["Custom Agents", "Automations", "Internal Tools", "AI Products"].map((s) => (
               <span key={s} className="font-sans text-sm text-do-gray">{s}</span>

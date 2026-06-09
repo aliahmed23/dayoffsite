@@ -15,11 +15,11 @@ export default function AboutPage() {
 
       {/* ── Header ── */}
       <header className="w-full px-6 md:px-12 py-5 relative z-50">
-        <div className="max-w-container mx-auto grid grid-cols-3 items-center">
+        <div className="max-w-container mx-auto flex items-center justify-between md:grid md:grid-cols-3 md:items-center">
 
-          <a href="/" className="inline-flex flex-col items-center justify-self-start" aria-label="DayOff Studio home">
-            <img src="/do-logo-clean.svg" alt="DayOff Studio" className="h-[100px] w-auto" />
-            <span className="font-jakarta text-xs font-bold text-do-black tracking-[0.1em] mt-1">DayOff Studio</span>
+          <a href="/" className="inline-flex items-center gap-2 md:flex-col md:gap-0 md:justify-self-start" aria-label="DayOff Studio home">
+            <img src="/DOLogoNew.svg" alt="DayOff Studio" className="h-10 md:h-[100px] w-auto" />
+            <span className="font-jakarta text-xs font-bold text-do-black tracking-[0.1em] md:mt-1">DayOff Studio</span>
           </a>
 
           <nav className="hidden md:flex items-center justify-center gap-8" aria-label="Main">
@@ -36,7 +36,7 @@ export default function AboutPage() {
 
           <div className="justify-self-end flex items-center">
             <a
-              href="/contact"
+              href="https://tally.so/r/9q4jg4"
               className="hidden md:inline-flex items-center gap-[5px] font-sans text-sm tracking-wide text-do-blue font-medium hover:text-do-black lowercase transition-colors duration-150"
             >
               contact us <span>↗</span>
@@ -61,22 +61,21 @@ export default function AboutPage() {
 
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-[#FBFBFB] border-t border-[#e4e3df] px-6 py-8 flex flex-col gap-6 z-50 shadow-sm">
+          <div className="md:hidden absolute top-full right-6 bg-[#FBFBFB] border border-[#e4e3df] rounded-lg px-5 py-4 flex flex-col gap-4 z-50 shadow-sm">
             {mobileLinks.map((l) => (
               <a
                 key={l}
                 href={l === "Studio" ? "/" : `/${l.toLowerCase()}`}
                 onClick={() => setMenuOpen(false)}
-                className="font-sans text-2xl lowercase text-do-black hover:text-do-blue transition-colors duration-150"
+                className="font-sans text-base lowercase text-do-black hover:text-do-blue transition-colors duration-150"
               >
                 {l}
               </a>
             ))}
-            <div className="border-t border-[#e4e3df] pt-6">
-              <a href="/contact" onClick={() => setMenuOpen(false)} className="font-sans text-sm text-do-blue font-medium lowercase">
-                contact us ↗
-              </a>
-            </div>
+            <a href="https://tally.so/r/9q4jg4" onClick={() => setMenuOpen(false)}
+              className="font-sans text-base lowercase text-do-black hover:text-do-blue transition-colors duration-150">
+              contact us
+            </a>
           </div>
         )}
       </header>
@@ -124,7 +123,7 @@ export default function AboutPage() {
 
           <div className="flex flex-col gap-2 items-center sm:items-start">
             <span className="font-jakarta text-[10px] tracking-[0.15em] font-bold text-do-black uppercase">Navigate</span>
-            {[["Studio", "/"], ["Work", "/work"], ["About", "/about"], ["Contact", "/contact"]].map(([label, href]) => (
+            {[["Studio", "/"], ["Work", "/work"], ["About", "/about"], ["Contact", "https://tally.so/r/9q4jg4"]].map(([label, href]) => (
               <a key={label} href={href} className="font-sans text-xs text-do-gray hover:text-do-black transition-colors duration-150 lowercase">{label}</a>
             ))}
           </div>

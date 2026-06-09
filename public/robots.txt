@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+Sitemap: https://dayoff.studio/sitemap.xml
