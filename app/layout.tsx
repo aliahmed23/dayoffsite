@@ -35,14 +35,6 @@ export const metadata: Metadata = {
     url: "https://dayoff.studio",
     siteName: "DayOff Studio",
     locale: "en_US",
-    images: [
-      {
-        url: "/DOmetadata.png",
-        width: 1536,
-        height: 1024,
-        alt: "DayOff Studio — We Automate the Boring Stuff",
-      },
-    ],
     type: "website",
   },
   twitter: {
@@ -50,7 +42,6 @@ export const metadata: Metadata = {
     title: "DayOff Studio — We Automate the Boring Stuff",
     description:
       "DayOff Studio builds custom agents, automations, and internal tools so you can stop doing repetitive work and get back to building your business.",
-    images: ["/DOmetadata.png"],
   },
 };
 
