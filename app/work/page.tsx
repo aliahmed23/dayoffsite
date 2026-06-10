@@ -51,7 +51,7 @@ export default function WorkPage() {
   const mobileLinks = navLinks.filter((l) => (l === "Studio" ? "/" : `/${l.toLowerCase()}`) !== pathname);
 
   return (
-    <div className="min-h-screen bg-[#FBFBFB] text-do-black">
+    <div className="min-h-screen bg-[#FBFBFB] text-do-black flex flex-col">
 
       <header className="w-full px-6 md:px-12 py-5 relative z-50">
         <div className="max-w-container mx-auto flex items-center justify-between md:grid md:grid-cols-3 md:items-center">
@@ -102,7 +102,7 @@ export default function WorkPage() {
         )}
       </header>
 
-      <main className="w-full px-6 md:px-12 py-16 md:py-24">
+      <main className="flex-1 w-full px-6 md:px-12 py-16 md:py-24">
         <div className="max-w-container mx-auto">
 
           <div className="flex items-center gap-2.5 mb-6">
@@ -122,6 +122,32 @@ export default function WorkPage() {
 
         </div>
       </main>
+
+      {/* ── Footer ── */}
+      <footer className="w-full px-6 md:px-12 py-10 border-t border-[#e4e3df]">
+        <div className="max-w-container mx-auto grid grid-cols-2 md:grid-cols-3 gap-8 text-center sm:text-left">
+
+          <div className="flex flex-col gap-2 items-center sm:items-start">
+            <span className="font-jakarta text-[10px] tracking-[0.15em] font-bold text-do-black uppercase">DayOff Studio</span>
+            <span className="font-sans text-xs text-do-gray leading-relaxed max-w-[180px]">We automate the boring stuff so you can keep building your business.</span>
+            <span className="font-sans text-[11px] text-do-gray mt-1">© {new Date().getFullYear()} All rights reserved</span>
+          </div>
+
+          <div className="flex flex-col gap-2 items-center sm:items-start">
+            <span className="font-jakarta text-[10px] tracking-[0.15em] font-bold text-do-black uppercase">Navigate</span>
+            {[["Studio", "/"], ["Work", "/work"], ["About", "/about"], ["Contact", "https://tally.so/r/9q4jg4"]].map(([label, href]) => (
+              <a key={label} href={href} className="font-sans text-xs text-do-gray hover:text-do-black transition-colors duration-150 lowercase">{label}</a>
+            ))}
+          </div>
+
+          <div className="hidden md:flex flex-col gap-2 items-center sm:items-start">
+            <span className="font-jakarta text-[10px] tracking-[0.15em] font-bold text-do-black uppercase">Get in touch</span>
+            <p className="font-sans text-xs text-do-gray leading-relaxed max-w-[180px]">Let&apos;s build something great together.</p>
+            <a href="https://tally.so/r/9q4jg4" className="font-sans text-xs text-do-blue hover:text-do-black transition-colors duration-150">contact us</a>
+          </div>
+
+        </div>
+      </footer>
 
     </div>
   );

@@ -95,7 +95,7 @@ export default function AboutPage() {
             </p>
 
             <p className="font-sans text-sm leading-relaxed text-do-gray">
-              At DayOff, we want to empower you on your journey as a business owner. There&apos;s no area we shy away from and are simply excited by solving the puzzle of successfully automating a workflow.
+              At DayOff, we want to empower you on this journey as a business owner. There&apos;s no area we shy away from and are simply excited by solving the puzzle of successfully automating a workflow.
             </p>
 
             <p className="font-sans text-sm leading-relaxed text-do-gray">
@@ -152,7 +152,7 @@ export default function AboutPage() {
           <div className="flex flex-col gap-2 items-center sm:items-start">
             <span className="font-jakarta text-[10px] tracking-[0.15em] font-bold text-do-black uppercase">Get in touch</span>
             <p className="font-sans text-xs text-do-gray leading-relaxed max-w-[180px]">Let&apos;s build something great together.</p>
-            <a href="mailto:hello@dayoff.studio" className="font-sans text-xs text-do-blue hover:text-do-black transition-colors duration-150">hello@dayoff.studio</a>
+            <a href="https://tally.so/r/9q4jg4" className="font-sans text-xs text-do-blue hover:text-do-black transition-colors duration-150">contact us</a>
           </div>
 
         </div>
