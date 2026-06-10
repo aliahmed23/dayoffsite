@@ -108,7 +108,7 @@ export default function AboutPage() {
                 <span className="font-medium text-do-black">Ali Ahmed</span> — Ex-Consulting, former founder, maker of many automations
               </p>
               <p className="font-sans text-sm leading-relaxed text-do-gray">
-                <span className="font-medium text-do-black">Saleem Ahmed</span> — Operations executive with 40+ years of experience at startups and public companies
+                <span className="font-medium text-do-black">Saleem Ahmed</span> — Operations executive with 25+ years of experience at startups and public companies
               </p>
             </div>
 
