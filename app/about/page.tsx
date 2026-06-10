@@ -18,7 +18,7 @@ export default function AboutPage() {
         <div className="max-w-container mx-auto flex items-center justify-between md:grid md:grid-cols-3 md:items-center">
 
           <a href="/" className="inline-flex items-center gap-2 md:flex-col md:gap-0 md:justify-self-start" aria-label="DayOff Studio home">
-            <img src="/DOLogoNew.svg" alt="DayOff Studio" className="h-10 md:h-[100px] w-auto" />
+            <img src="/DOLOGOFINAL.png" alt="DayOff Studio" className="h-10 md:h-[100px] w-auto drop-shadow-sm" />
             <span className="font-jakarta text-xs font-bold text-do-black tracking-[0.1em] md:mt-1">DayOff Studio</span>
           </a>
 
@@ -81,7 +81,7 @@ export default function AboutPage() {
       </header>
 
       {/* ── Main ── */}
-      <main className="flex-1 w-full px-6 md:px-12 pt-10 pb-2 md:pt-14 md:pb-4">
+      <main className="flex-1 w-full px-6 md:px-12 pt-10 pb-8 md:pt-14 md:pb-10">
         <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-start">
 
           {/* Left — all text */}
@@ -91,7 +91,7 @@ export default function AboutPage() {
             </h1>
 
             <p className="font-sans text-sm leading-relaxed text-do-gray">
-              In today&apos;s rapidly evolving AI age, the job of the founder is shifting. There is no time to be wasted and vision has never mattered more. As such, founders simply can&apos;t waste time doing tasks twice. Their goal is to create and then quickly automate so they can move to the next unexplored area.
+              In today&apos;s rapidly evolving AI age, the job of the founder is shifting. There is no time to be wasted and vision has never mattered more. As such, founders should not do the same task twice. Their goal is to create and then quickly automate so they can move to the next unexplored area.
             </p>
 
             <p className="font-sans text-sm leading-relaxed text-do-gray">
@@ -126,7 +126,7 @@ export default function AboutPage() {
 
           {/* Right — about image */}
           <div className="w-[60%] mx-auto md:-mt-10">
-            <img src="/aboutimg.svg" alt="About DayOff Studio" className="w-full h-auto rounded-xl" />
+            <img src="/aboutimg2-removebg.png" alt="About DayOff Studio" className="w-full h-auto rounded-xl" />
           </div>
 
         </div>

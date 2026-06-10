@@ -7,6 +7,7 @@ const navLinks = ["Studio", "Work", "About"] as const;
 
 export default function RiftProjectPage() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [lightbox, setLightbox] = useState<string | null>(null);
   const pathname = usePathname();
 
   return (
@@ -16,7 +17,7 @@ export default function RiftProjectPage() {
       <header className="w-full px-6 md:px-12 py-5 relative z-50">
         <div className="max-w-container mx-auto flex items-center justify-between md:grid md:grid-cols-3 md:items-center">
           <a href="/" className="inline-flex items-center gap-2 md:flex-col md:gap-0 md:justify-self-start" aria-label="DayOff Studio home">
-            <img src="/DOLogoNew.svg" alt="DayOff Studio" className="h-10 md:h-[100px] w-auto" />
+            <img src="/DOLOGOFINAL.png" alt="DayOff Studio" className="h-10 md:h-[100px] w-auto drop-shadow-sm" />
             <span className="font-jakarta text-xs font-bold text-do-black tracking-[0.1em] md:mt-1">DayOff Studio</span>
           </a>
           <nav className="hidden md:flex items-center justify-center gap-8" aria-label="Main">
@@ -131,12 +132,19 @@ export default function RiftProjectPage() {
             </div>
 
             {/* Right — project image */}
-            <div className="w-full rounded-xl overflow-hidden shadow-md">
+            <div className="w-full rounded-xl overflow-hidden shadow-md cursor-zoom-in" onClick={() => setLightbox("/IM-Dashboard.png")}>
               <img src="/IM-Dashboard.png" alt="IM Dashboard — Operational Command Center" className="w-full h-auto" />
             </div>
 
           </div>
         </section>
+
+        {lightbox && (
+          <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4" onClick={() => setLightbox(null)}>
+            <button className="absolute top-5 right-6 text-white text-2xl leading-none hover:text-gray-300 transition-colors" onClick={() => setLightbox(null)}>✕</button>
+            <img src={lightbox} alt="Project image" className="max-w-full max-h-[90vh] rounded-xl shadow-2xl object-contain" onClick={(e) => e.stopPropagation()} />
+          </div>
+        )}
 
         {/* ── Next project ── */}
         <section className="w-full px-6 md:px-12 py-12 border-t border-[#e4e3df]">

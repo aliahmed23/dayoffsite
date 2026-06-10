@@ -91,7 +91,7 @@ export default function HomePage() {
         <div className="max-w-container mx-auto flex items-center justify-between md:grid md:grid-cols-3 md:items-center">
 
           <a href="/" className="inline-flex items-center gap-2 md:flex-col md:gap-0 md:justify-self-start" aria-label="DayOff Studio home">
-            <img src="/DOLogoNew.svg" alt="DayOff Studio" className="h-10 md:h-[100px] w-auto" />
+            <img src="/DOLOGOFINAL.png" alt="DayOff Studio" className="h-10 md:h-[100px] w-auto drop-shadow-sm" />
             <span className="font-jakarta text-xs font-bold text-do-black tracking-[0.1em] md:mt-1">
               DayOff Studio
             </span>
@@ -217,7 +217,7 @@ export default function HomePage() {
               <span className="inline-block w-2 h-2 rounded-full bg-do-blue shrink-0" />
               <span className="font-jakarta text-xs tracking-[0.1em] font-bold text-do-black lowercase">Our tool kit</span>
             </div>
-            <img src="/toolsimg3.svg" alt="Our tool kit" className="w-full h-auto" />
+            <img src="/toolsimg.png" alt="Our tool kit" className="w-full h-auto" />
           </div>
 
           {/* Right — copy */}
@@ -322,7 +322,7 @@ export default function HomePage() {
           {/* Col 1 — brand */}
           <div className="flex flex-col gap-4 items-start">
             <a href="/" aria-label="DayOff Studio home">
-              <img src="/DOLogoNew.svg" alt="DayOff Studio" className="h-12 w-auto" />
+              <img src="/DOLOGOFINAL.png" alt="DayOff Studio" className="h-12 w-auto" />
             </a>
             <p className="font-sans text-xs leading-relaxed text-do-gray max-w-[200px]">
               We automate the boring stuff so you can keep building your business.

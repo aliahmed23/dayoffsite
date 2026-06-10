@@ -7,6 +7,7 @@ const navLinks = ["Studio", "Work", "About"] as const;
 
 export default function OrionProjectPage() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [lightbox, setLightbox] = useState<string | null>(null);
   const pathname = usePathname();
 
   return (
@@ -16,7 +17,7 @@ export default function OrionProjectPage() {
       <header className="w-full px-6 md:px-12 py-5 relative z-50">
         <div className="max-w-container mx-auto flex items-center justify-between md:grid md:grid-cols-3 md:items-center">
           <a href="/" className="inline-flex items-center gap-2 md:flex-col md:gap-0 md:justify-self-start" aria-label="DayOff Studio home">
-            <img src="/DOLogoNew.svg" alt="DayOff Studio" className="h-10 md:h-[100px] w-auto" />
+            <img src="/DOLOGOFINAL.png" alt="DayOff Studio" className="h-10 md:h-[100px] w-auto drop-shadow-sm" />
             <span className="font-jakarta text-xs font-bold text-do-black tracking-[0.1em] md:mt-1">DayOff Studio</span>
           </a>
           <nav className="hidden md:flex items-center justify-center gap-8" aria-label="Main">
@@ -134,7 +135,7 @@ export default function OrionProjectPage() {
             </div>
 
             {/* Right — project image */}
-            <div className="w-full rounded-xl overflow-hidden shadow-md">
+            <div className="w-full rounded-xl overflow-hidden shadow-md cursor-zoom-in" onClick={() => setLightbox("/pay2.png")}>
               <img src="/pay2.png" alt="Automated Conversion Follow-Up Engine" className="w-full h-auto" />
             </div>
 
@@ -144,21 +145,29 @@ export default function OrionProjectPage() {
         {/* ── Gallery ── */}
         <section className="w-full px-6 md:px-12 py-10">
           <div className="max-w-container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <div className="rounded-xl overflow-hidden shadow-md">
+            <div className="w-3/4 mx-auto rounded-xl overflow-hidden shadow-md cursor-zoom-in" onClick={() => setLightbox("/pay1.png")}>
               <img src="/pay1.png" alt="Automated Conversion Follow-Up Engine" className="w-full h-auto" />
             </div>
-            <div className="rounded-xl overflow-hidden shadow-md">
+            <div className="w-3/4 mx-auto rounded-xl overflow-hidden shadow-md cursor-zoom-in" onClick={() => setLightbox("/pay%20message.png")}>
               <img src="/pay%20message.png" alt="Automated Conversion Follow-Up Engine" className="w-full h-auto" />
             </div>
           </div>
         </section>
+
+        {/* ── Lightbox ── */}
+        {lightbox && (
+          <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4" onClick={() => setLightbox(null)}>
+            <button className="absolute top-5 right-6 text-white text-2xl leading-none hover:text-gray-300 transition-colors" onClick={() => setLightbox(null)}>✕</button>
+            <img src={lightbox} alt="Project image" className="max-w-full max-h-[90vh] rounded-xl shadow-2xl object-contain" onClick={(e) => e.stopPropagation()} />
+          </div>
+        )}
 
         {/* ── Next project ── */}
         <section className="w-full px-6 md:px-12 py-12 border-t border-[#e4e3df]">
           <div className="max-w-container mx-auto flex items-center justify-between">
             <span className="font-jakarta text-xs tracking-[0.1em] font-bold text-do-gray uppercase">Next project</span>
             <a href="/work/solace" className="group inline-flex items-center gap-3 font-serif font-light text-2xl text-do-black hover:text-do-blue transition-colors duration-150">
-              Solace <span className="font-sans text-base transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
+              Mission Control Center <span className="font-sans text-base transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
             </a>
           </div>
         </section>

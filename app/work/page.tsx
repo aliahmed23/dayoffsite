@@ -56,7 +56,7 @@ export default function WorkPage() {
       <header className="w-full px-6 md:px-12 py-5 relative z-50">
         <div className="max-w-container mx-auto flex items-center justify-between md:grid md:grid-cols-3 md:items-center">
           <a href="/" className="inline-flex items-center gap-2 md:flex-col md:gap-0 md:justify-self-start" aria-label="DayOff Studio home">
-            <img src="/DOLogoNew.svg" alt="DayOff Studio" className="h-10 md:h-[100px] w-auto" />
+            <img src="/DOLOGOFINAL.png" alt="DayOff Studio" className="h-10 md:h-[100px] w-auto drop-shadow-sm" />
             <span className="font-jakarta text-xs font-bold text-do-black tracking-[0.1em] md:mt-1">
               DayOff Studio
             </span>
