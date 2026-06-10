@@ -81,30 +81,51 @@ export default function AboutPage() {
       </header>
 
       {/* ── Main ── */}
-      <main className="flex-1 w-full px-6 md:px-12 pt-10 pb-20 md:pt-14 md:pb-28">
+      <main className="flex-1 w-full px-6 md:px-12 pt-10 pb-2 md:pt-14 md:pb-4">
         <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-start">
 
           {/* Left — all text */}
           <div className="flex flex-col gap-6">
             <h1 className="font-serif font-light text-[clamp(2.6rem,5vw,4rem)] leading-[1.06] text-do-black">
-              We believe great systems create space for what <em className="italic">matters.</em>
+              We create systems that work while you <em className="italic">sleep</em>
             </h1>
 
             <p className="font-sans text-sm leading-relaxed text-do-gray">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              In today&apos;s rapidly evolving AI age, the job of the founder seems to be evolving as well. There is no time to be wasted and vision has never mattered more. As such, founders simply can&apos;t waste time doing tasks twice. Their goal is to create and then quickly automate so they can move to the next unexplored area.
             </p>
 
             <p className="font-sans text-sm leading-relaxed text-do-gray">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit.
+              At DayOff, we want to empower you on your journey as a business owner. There&apos;s no area we shy away from and are simply excited by solving the puzzle of successfully automating a workflow.
             </p>
 
             <p className="font-sans text-sm leading-relaxed text-do-gray">
-              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid ex ea commodi consequatur.
+              Our team consists of 2 individuals for now. We&apos;re a father-son studio who obsess over making boring tasks run on their own.
             </p>
+
+            <div className="flex flex-col gap-2">
+              <p className="font-sans text-sm leading-relaxed text-do-gray">When you work with us, you work with us:</p>
+              <p className="font-sans text-sm leading-relaxed text-do-gray">
+                <span className="font-medium text-do-black">Ali Ahmed</span> — Ex-Consulting, former founder, maker of many automations
+              </p>
+              <p className="font-sans text-sm leading-relaxed text-do-gray">
+                <span className="font-medium text-do-black">Saleem Ahmed</span> — Operations executive with 40+ years of experience at startups and public companies
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <p className="font-sans text-sm leading-relaxed text-do-gray">We&apos;d love to hear from you</p>
+              <a
+                href="https://tally.so/r/9q4jg4"
+                className="inline-flex items-center gap-[5px] font-sans text-sm font-medium text-do-blue hover:text-do-black transition-colors duration-150 group"
+              >
+                contact us
+                <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-[3px] group-hover:-translate-y-[3px]" aria-hidden="true">↗</span>
+              </a>
+            </div>
           </div>
 
           {/* Right — about image */}
-          <div className="w-[60%] mx-auto">
+          <div className="w-[60%] mx-auto md:-mt-10">
             <img src="/aboutimg.svg" alt="About DayOff Studio" className="w-full h-auto rounded-xl" />
           </div>
 

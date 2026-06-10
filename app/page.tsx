@@ -163,7 +163,7 @@ export default function HomePage() {
             </h1>
 
             <p className="font-sans text-sm leading-relaxed text-do-gray max-w-[360px]">
-              Leveraging today's tools to create systems that work for you so you can keep building your business.
+              Leveraging today's tech to help you focus on the fun part of building your business
             </p>
           </div>
 
@@ -208,7 +208,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Tool Kit ── */}
-      <section className="w-full px-6 md:px-12 pt-5 pb-20 md:pt-7 md:pb-28">
+      <section className="w-full px-6 md:px-12 pt-5 pb-8 md:pt-7 md:pb-12">
         <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20 items-center">
 
           {/* Left — label + image */}
