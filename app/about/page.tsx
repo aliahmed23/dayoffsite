@@ -91,11 +91,11 @@ export default function AboutPage() {
             </h1>
 
             <p className="font-sans text-sm leading-relaxed text-do-gray">
-              In today&apos;s rapidly evolving AI age, the job of the founder seems to be evolving as well. There is no time to be wasted and vision has never mattered more. As such, founders simply can&apos;t waste time doing tasks twice. Their goal is to create and then quickly automate so they can move to the next unexplored area.
+              In today&apos;s rapidly evolving AI age, the job of the founder is shifting. There is no time to be wasted and vision has never mattered more. As such, founders simply can&apos;t waste time doing tasks twice. Their goal is to create and then quickly automate so they can move to the next unexplored area.
             </p>
 
             <p className="font-sans text-sm leading-relaxed text-do-gray">
-              At DayOff, we want to empower you on this journey as a business owner. There&apos;s no area we shy away from and are simply excited by solving the puzzle of successfully automating a workflow.
+              At DayOff, we want to empower you on this journey as a business owner by crafting thoughtful automation solutions that scale with your business. We pride ourselves on designing systems that won&apos;t break on you. There&apos;s no area we shy away from exploring.
             </p>
 
             <p className="font-sans text-sm leading-relaxed text-do-gray">
@@ -108,7 +108,7 @@ export default function AboutPage() {
                 <span className="font-medium text-do-black">Ali Ahmed</span> — Ex-Consulting, former founder, maker of many automations
               </p>
               <p className="font-sans text-sm leading-relaxed text-do-gray">
-                <span className="font-medium text-do-black">Saleem Ahmed</span> — Operations executive with 25+ years of experience at startups and public companies
+                <span className="font-medium text-do-black">Saleem Ahmed</span> — Operations exec with 25+ years in startups and public companies
               </p>
             </div>
 

@@ -3,15 +3,15 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 const projects = [
-  { name: "Bobby Bot",          category: "Agent",                slug: "flare",   bg: "#FFC400", img: "/BobbyBot1.png" },
-  { name: "How'd it go?",       category: "decision workflow",    slug: "ephra",   bg: "#FFD8C2", img: "/hitgo.png" },
-  { name: "IM Dashboard",       category: "Dashboard",            slug: "rift",    bg: "#FF6BAA", img: "/IM-Dashboard.png" },
-  { name: "Super Power Slides", category: "AI Tool",              slug: "mosaic",  bg: "#0057FF", img: "/Slides-UI.png" },
-  { name: "Monday Roundup",     category: "AI Powered Reporting", slug: "canopy",  bg: "#00A82D", img: "/MR0.png" },
-  { name: "The New Times",      category: "Automation",           slug: "dusk",    bg: "#FF3B1F", img: "/VZine.png" },
-  { name: "Orion",              category: "Branding, Web Design", slug: "orion",   bg: "#111111" },
-  { name: "Solace",             category: "Brand Identity",       slug: "solace",  bg: "#FFD8C2" },
-  { name: "Veil",               category: "Web Design",           slug: "veil",    bg: "#FFC400" },
+  { name: "Bobby Bot",              category: "AGENT",            slug: "flare",   bg: "#FFC400", img: "/BobbyBot1.png" },
+  { name: "How'd it go?",           category: "DECISION WORKFLOW", slug: "ephra",   bg: "#FFD8C2", img: "/hitgo.png" },
+  { name: "Implementation Tracker",  category: "DASHBOARD",         slug: "rift",    bg: "#FF6BAA", img: "/IM-Dashboard.png" },
+  { name: "Super Power Slides",     category: "AI TOOL",           slug: "mosaic",  bg: "#0057FF", img: "/Slides-UI.png" },
+  { name: "Monday Roundup",         category: "AI REPORTING",      slug: "canopy",  bg: "#00A82D", img: "/MR0.png" },
+  { name: "The New Times",          category: "PUBLISHING",        slug: "dusk",    bg: "#FF3B1F", img: "/VZine.png" },
+  { name: "imessage - Did you pay?", category: "FUNNEL",           slug: "orion",   bg: "#111111", img: "/pay%20message.png" },
+  { name: "Mission Control Center", category: "COMMAND CENTER",    slug: "solace",  bg: "#FFD8C2", img: "/miscont1.png" },
+  { name: "Instant Shopify",        category: "COMMERCE",          slug: "veil",    bg: "#FFC400", img: "/shopd1.png" },
 ] as const;
 
 function ProjectCard({ name, category, slug, bg, img }: { name: string; category: string; slug: string; bg: string; img?: string }) {
