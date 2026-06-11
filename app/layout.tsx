@@ -24,12 +24,12 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "DayOff Studio — We Automate the Boring Stuff",
+  title: "DayOff Studio — We automate the boring stuff",
   description:
     "DayOff Studio builds custom agents, automations, and internal tools so you can stop doing repetitive work and get back to building your business.",
   metadataBase: new URL("https://dayoff.studio"),
   openGraph: {
-    title: "DayOff Studio — We Automate the Boring Stuff",
+    title: "DayOff Studio — We automate the boring stuff",
     description:
       "DayOff Studio builds custom agents, automations, and internal tools so you can stop doing repetitive work and get back to building your business.",
     url: "https://dayoff.studio",
@@ -41,13 +41,13 @@ export const metadata: Metadata = {
         url: "https://dayoff.studio/DOmetadata.png",
         width: 1200,
         height: 630,
-        alt: "DayOff Studio — We Automate the Boring Stuff",
+        alt: "DayOff Studio — We automate the boring stuff",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "DayOff Studio — We Automate the Boring Stuff",
+    title: "DayOff Studio — We automate the boring stuff",
     description:
       "DayOff Studio builds custom agents, automations, and internal tools so you can stop doing repetitive work and get back to building your business.",
     images: ["https://dayoff.studio/DOmetadata.png"],

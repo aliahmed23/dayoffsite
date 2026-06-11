@@ -91,19 +91,15 @@ export default function AboutPage() {
             </h1>
 
             <p className="font-sans text-sm leading-relaxed text-do-gray">
-              In today&apos;s rapidly evolving AI age, the job of the founder is shifting. There is no time to be wasted and vision has never mattered more. As such, founders should not do the same task twice. Their goal is to create and then quickly automate so they can move to the next unexplored area.
+              We&apos;re a father-son studio who obsess over making boring tasks run on their own. We started this agency because in 2026 we&apos;ve already seen a 1 person $1B company and suspect this trend will only get stronger.
             </p>
 
             <p className="font-sans text-sm leading-relaxed text-do-gray">
-              At DayOff, we want to empower you on this journey as a business owner by crafting thoughtful automation solutions that scale with your business. We pride ourselves on designing systems that won&apos;t break on you. There&apos;s no area we shy away from exploring.
-            </p>
-
-            <p className="font-sans text-sm leading-relaxed text-do-gray">
-              Our team consists of 2 individuals for now. We&apos;re a father-son studio who obsess over making boring tasks run on their own.
+              In the AI age, it&apos;s never been more feasible to do more with less, but the key is knowing how to set up systems that scale with your business. That&apos;s where we come in. We pride ourselves on designing systems that won&apos;t break on you. There&apos;s no area we shy away from exploring and we&apos;re pretty confident we can find a way to thoughtfully automate any workflow.
             </p>
 
             <div className="flex flex-col gap-2">
-              <p className="font-sans text-sm leading-relaxed text-do-gray">When you work with us, you work with us:</p>
+              <p className="font-sans text-sm leading-relaxed text-do-gray">We&apos;re a lean team and plan on staying that way. When you work with us, you work with us:</p>
               <p className="font-sans text-sm leading-relaxed text-do-gray">
                 <span className="font-medium text-do-black">Ali Ahmed</span> — Ex-Consulting, former founder, maker of many automations
               </p>
@@ -113,7 +109,7 @@ export default function AboutPage() {
             </div>
 
             <div className="flex flex-col gap-3">
-              <p className="font-sans text-sm leading-relaxed text-do-gray">We&apos;d love to hear from you</p>
+              <p className="font-sans text-sm leading-relaxed text-do-gray">We&apos;d love to hear from you.</p>
               <a
                 href="https://tally.so/r/9q4jg4"
                 className="inline-flex items-center gap-[5px] font-sans text-sm font-medium text-do-blue hover:text-do-black transition-colors duration-150 group"
