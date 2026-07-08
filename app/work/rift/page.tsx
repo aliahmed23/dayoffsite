@@ -29,8 +29,10 @@ export default function RiftProjectPage() {
             ))}
           </nav>
           <div className="justify-self-end flex items-center">
-            <a href="https://tally.so/r/9q4jg4" className="hidden md:inline-flex items-center gap-[5px] font-sans text-sm text-do-blue font-medium hover:text-do-black lowercase transition-colors duration-150">
-              contact us <span>↗</span>
+            <a href="https://tally.so/r/9q4jg4"
+              target="_blank"
+              rel="noopener noreferrer" className="hidden md:inline-flex items-center gap-[5px] font-sans text-sm text-do-blue font-medium hover:text-do-black lowercase transition-colors duration-150">
+              work with us <span>↗</span>
             </a>
             <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden flex flex-col justify-center items-center gap-[5px] w-6 h-6" aria-label="Toggle menu">
               {menuOpen ? <span className="font-sans text-lg text-do-black leading-none">✕</span> : (
@@ -49,9 +51,11 @@ export default function RiftProjectPage() {
               <a key={l} href={l === "Studio" ? "/" : `/${l.toLowerCase()}`} onClick={() => setMenuOpen(false)}
                 className="font-sans text-base lowercase text-do-black hover:text-do-blue transition-colors duration-150">{l}</a>
             ))}
-            <a href="https://tally.so/r/9q4jg4" onClick={() => setMenuOpen(false)}
+            <a href="https://tally.so/r/9q4jg4"
+              target="_blank"
+              rel="noopener noreferrer" onClick={() => setMenuOpen(false)}
               className="font-sans text-base lowercase text-do-black hover:text-do-blue transition-colors duration-150">
-              contact us
+              work with us
             </a>
           </div>
         )}
@@ -164,6 +168,8 @@ export default function RiftProjectPage() {
           <div className="flex flex-col gap-2 items-center sm:items-start">
             <span className="font-jakarta text-[10px] tracking-[0.15em] font-bold text-do-black uppercase">DayOff Studio</span>
             <span className="font-sans text-xs text-do-gray leading-relaxed max-w-[180px]">We automate the boring stuff so you can keep building your business.</span>
+            <span className="font-sans text-xs text-do-gray leading-relaxed max-w-[180px] mt-1">45 E 20th St, 11th Floor, New York, NY</span>
+            <a href="tel:+12489714091" className="font-sans text-xs text-do-gray hover:text-do-black transition-colors duration-150">248-971-4091</a>
             <span className="font-sans text-[11px] text-do-gray mt-1">© {new Date().getFullYear()} All rights reserved</span>
           </div>
           <div className="flex flex-col gap-2 items-center sm:items-start">

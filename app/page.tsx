@@ -57,14 +57,20 @@ function ArrowLink({
   href,
   children,
   className = "",
+  target,
+  rel,
 }: {
   href: string;
   children: React.ReactNode;
   className?: string;
+  target?: string;
+  rel?: string;
 }) {
   return (
     <a
       href={href}
+      target={target}
+      rel={rel}
       className={`group inline-flex items-center gap-[5px] font-sans tracking-wide transition-colors duration-150 ${className}`}
     >
       {children}
@@ -107,9 +113,11 @@ export default function HomePage() {
           <div className="justify-self-end flex items-center">
             <ArrowLink
               href="https://tally.so/r/9q4jg4"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden md:inline-flex text-sm text-do-blue font-medium hover:text-do-black lowercase"
             >
-              contact us
+              work with us
             </ArrowLink>
             <button
               onClick={() => setMenuOpen(!menuOpen)}
@@ -144,10 +152,12 @@ export default function HomePage() {
             ))}
             <a
               href="https://tally.so/r/9q4jg4"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
               className="font-sans text-base lowercase text-do-black hover:text-do-blue transition-colors duration-150"
             >
-              contact us
+              work with us
             </a>
           </div>
         )}
@@ -327,6 +337,12 @@ export default function HomePage() {
             <p className="font-sans text-xs leading-relaxed text-do-gray max-w-[200px]">
               We automate the boring stuff so you can keep building your business.
             </p>
+            <p className="font-sans text-xs leading-relaxed text-do-gray max-w-[200px]">
+              45 E 20th St, 11th Floor, New York, NY
+            </p>
+            <a href="tel:+12489714091" className="font-sans text-xs text-do-gray hover:text-do-black transition-colors duration-150">
+              248-971-4091
+            </a>
           </div>
 
           {/* Col 2 — nav */}

@@ -37,9 +37,11 @@ export default function AboutPage() {
           <div className="justify-self-end flex items-center">
             <a
               href="https://tally.so/r/9q4jg4"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden md:inline-flex items-center gap-[5px] font-sans text-sm tracking-wide text-do-blue font-medium hover:text-do-black lowercase transition-colors duration-150"
             >
-              contact us <span>↗</span>
+              work with us <span>↗</span>
             </a>
             <button
               onClick={() => setMenuOpen(!menuOpen)}
@@ -72,9 +74,11 @@ export default function AboutPage() {
                 {l}
               </a>
             ))}
-            <a href="https://tally.so/r/9q4jg4" onClick={() => setMenuOpen(false)}
+            <a href="https://tally.so/r/9q4jg4"
+              target="_blank"
+              rel="noopener noreferrer" onClick={() => setMenuOpen(false)}
               className="font-sans text-base lowercase text-do-black hover:text-do-blue transition-colors duration-150">
-              contact us
+              work with us
             </a>
           </div>
         )}
@@ -112,9 +116,11 @@ export default function AboutPage() {
               <p className="font-sans text-sm leading-relaxed text-do-gray">We&apos;d love to hear from you.</p>
               <a
                 href="https://tally.so/r/9q4jg4"
+              target="_blank"
+              rel="noopener noreferrer"
                 className="inline-flex items-center gap-[5px] font-sans text-sm font-medium text-do-blue hover:text-do-black transition-colors duration-150 group"
               >
-                contact us
+                work with us
                 <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-[3px] group-hover:-translate-y-[3px]" aria-hidden="true">↗</span>
               </a>
             </div>
@@ -135,6 +141,8 @@ export default function AboutPage() {
           <div className="flex flex-col gap-2 items-center sm:items-start">
             <span className="font-jakarta text-[10px] tracking-[0.15em] font-bold text-do-black uppercase">DayOff Studio</span>
             <span className="font-sans text-xs text-do-gray leading-relaxed max-w-[180px]">We automate the boring stuff so you can keep building your business.</span>
+            <span className="font-sans text-xs text-do-gray leading-relaxed max-w-[180px] mt-1">45 E 20th St, 11th Floor, New York, NY</span>
+            <a href="tel:+12489714091" className="font-sans text-xs text-do-gray hover:text-do-black transition-colors duration-150">248-971-4091</a>
             <span className="font-sans text-[11px] text-do-gray mt-1">© {new Date().getFullYear()} All rights reserved</span>
           </div>
 
@@ -148,7 +156,9 @@ export default function AboutPage() {
           <div className="flex flex-col gap-2 items-center sm:items-start">
             <span className="font-jakarta text-[10px] tracking-[0.15em] font-bold text-do-black uppercase">Get in touch</span>
             <p className="font-sans text-xs text-do-gray leading-relaxed max-w-[180px]">Let&apos;s build something great together.</p>
-            <a href="https://tally.so/r/9q4jg4" className="font-sans text-xs text-do-blue hover:text-do-black transition-colors duration-150">contact us</a>
+            <a href="https://tally.so/r/9q4jg4"
+              target="_blank"
+              rel="noopener noreferrer" className="font-sans text-xs text-do-blue hover:text-do-black transition-colors duration-150">work with us</a>
           </div>
 
         </div>
